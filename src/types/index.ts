@@ -1,9 +1,5 @@
 // User Types
-export enum UserRole {
-  SUPER_ADMIN = 'SUPER_ADMIN',
-  OVERALL_MANAGER = 'OVERALL_MANAGER',
-  BRANCH_MANAGER = 'BRANCH_MANAGER',
-}
+export type Role = 'ADMIN' | 'MANAGER' | 'BRANCH_MANAGER';
 
 export enum UserStatus {
   ACTIVE = 'ACTIVE',
