@@ -30,7 +30,7 @@ const NewSale = () => {
   const { items, addItem, removeItem, updateQuantity, clearCart, getTotal, customerName, customerPhone, setCustomerInfo } = useCartStore();
   const [searchQuery, setSearchQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState('all');
-  const [showCheckout, setShowCheckout] = usenState(false);
+  const [showCheckout, setShowCheckout] = useState(false);
   const [saleType, setSaleType] = useState<SaleType>(SaleType.CASH);
 
   const branchId = user?.branchId;
