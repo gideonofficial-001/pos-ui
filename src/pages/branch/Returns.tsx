@@ -1,1 +1,0 @@
-const Returns = () => <div><h1>Returns</h1></div>; export default Returns;

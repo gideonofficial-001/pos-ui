@@ -1,1 +1,0 @@
-const Branches = () => <div><h1>Branches Management</h1></div>; export default Branches;
