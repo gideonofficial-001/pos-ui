@@ -1,36 +1,13 @@
 {
-  "version": 2.00,
+  "version": 2,
   "name": "njugush-pos-frontend",
   "framework": "vite",
-  "buildCommand": "npm install && npm run build",
-  "outputDirectory": "frontend/dist",
-  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "rewrites": [
     {
       "source": "/(.*)",
       "destination": "/index.html"
     }
-  ],
-  "headers": [
-    {
-      "source": "/api/(.*)",
-      "headers": [
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        },
-        {
-          "key": "Access-Control-Allow-Methods",
-          "value": "GET, POST, PUT, PATCH, DELETE, OPTIONS"
-        },
-        {
-          "key": "Access-Control-Allow-Headers",
-          "value": "Content-Type, Authorization"
-        }
-      ]
-    }
-  ],
-  "env": {
-    "VITE_API_URL": "https://njugush-pos-backend.onrender.com/api"
-  }
+  ]
 }
